@@ -18,14 +18,14 @@
 """Add QoS db models
 
 Revision ID: 562fa8b1d4b5
-Revises: havana
+Revises: icehouse
 Create Date: 2013-04-22 10:53:29.669259
 
 """
 
 # revision identifiers, used by Alembic.
 revision = '562fa8b1d4b5'
-down_revision = 'havana'
+down_revision = 'icehouse'
 
 # Change to ['*'] if this migration applies to all plugins
 
