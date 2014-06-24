@@ -30,7 +30,7 @@ down_revision = '3d6fae8b70b0'
 # Change to ['*'] if this migration applies to all plugins
 
 migration_for_plugins = [
-    'neutron.plugins.openvswitch.ovs_neutron_plugin.OVSNeutronPluginV2'
+    '*'
 ]
 
 from alembic import op
