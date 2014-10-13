@@ -695,7 +695,7 @@ class Ml2Plugin(db_base_plugin_v2.NeutronDbPluginV2,
             elif changed_fixed_ips:
                 self._check_fixed_ips_and_address_pairs_no_overlap(
                     context, updated_port)
-            self._process_qos_port_update(context, updated_port, port['port'])
+            self.process_port_qos_update(context, id, port)
             self._extend_port_dict_qos(context, updated_port)
             need_port_update_notify |= self.update_security_group_on_port(
                 context, id, port, original_port, updated_port)
