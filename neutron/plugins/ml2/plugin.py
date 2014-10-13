@@ -421,8 +421,6 @@ class Ml2Plugin(db_base_plugin_v2.NeutronDbPluginV2,
                                                                     network)
             self._process_l3_update(context, updated_network,
                                     network['network'])
-            self._process_qos_network_update(context, updated_network,
-                                             network['network'])
             self._extend_network_dict_qos(context, updated_network)
             self._extend_network_dict_provider(context, updated_network)
             mech_context = driver_context.NetworkContext(
